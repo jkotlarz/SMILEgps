@@ -1,15 +1,13 @@
 # SMILEgps/smilegps.py
 
-    import math
-    import geopandas as gpd
-
 import math
+
 
 def calculate_wgs84_coordinates(w, h, x, y, lat_center, lon_center, altitude, alpha_width, alpha_height, yaw):
     """
     Calculate new WGS84 coordinates based on image dimensions, camera parameters,
     and position within the image.
-
+    
     Parameters:
     - w, h: Width and height of the image in pixels
     - x, y: Coordinates of the pixel in the image
@@ -17,7 +15,7 @@ def calculate_wgs84_coordinates(w, h, x, y, lat_center, lon_center, altitude, al
     - altitude: Altitude of the camera
     - alpha_width, alpha_height: Field of view angles in width and height directions
     - yaw: Yaw angle of the camera
-
+    
     Returns:
     - new_lat: New latitude based on the calculations
     - new_lon: New longitude based on the calculations
