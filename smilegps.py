@@ -1,7 +1,9 @@
 # SMILEgps/smilegps.py
 
-import math
+# Jan Kotlarz, 2023
+# jan.kotlarz@gmail.com
 
+import math
 
 def calculate_wgs84_coordinates(w, h, x, y, lat_center, lon_center, altitude, alpha_width, alpha_height, yaw):
     """
